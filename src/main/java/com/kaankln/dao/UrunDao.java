@@ -78,7 +78,7 @@ public class UrunDao extends BaseDao {
     public List<UrunDetayDto> findAllUrunDetayDtoByKategoriKirilim(Long kirilim) {
 
         String sql = " select " +
-                " new UrunDetayDto( urun.adi, kategori.adi, urun.fiyat ) " +
+                " new com.kaankln.dto.UrunDetayDto( urun.adi, kategori.adi, urun.fiyat ) " +
                 " from Urun urun " +
                 " left join Kategori kategori  on urun.kategori.id = kategori.id " +
                 " where kategori.kirilim = :kirilim ";

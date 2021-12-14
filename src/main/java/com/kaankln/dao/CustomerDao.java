@@ -8,13 +8,24 @@ import org.hibernate.query.Query;
 import java.util.List;
 
 public class CustomerDao extends BaseDao {
-    public List<CustomerDto> findAll() {
 
+    public List<CustomerDto> findAll() {
         Query query = getCurrentSession().createQuery(
                 "select " +
-                        "new com.kaankln.dto.CustomerDto( customer.id,customer.name,customer.lastname,customer.email,customer.telephone)" +
+                        "new com.kaankln.dto.CustomerDto( customer.id,customer.name,customer.lastname,customer.email,customer.telephone) " +
                         "from Customer customer");
 
         return query.list();
+    }
+
+    public CustomerDto findByName(String name) {
+        Query query = getCurrentSession().createQuery(
+                "select " +
+                        "new com.kaankln.dto.CustomerDto( customer.id,customer.name,customer.lastname,customer.email,customer.telephone) " +
+                        "from Customer customer " +
+                        "where customer.name= :name");
+
+        query.setParameter("name", name);
+        return (CustomerDto) query.uniqueResult();
     }
 }

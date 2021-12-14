@@ -1,13 +1,15 @@
 package com.kaankln.dto;
 
+import java.util.Date;
+
 //DTO for question 4
 public class CustomerCommantsDto {
 
-    private String customerId;
+    private Long customerId;
     private String customerName;
     private String productName;
     private String commant;
-    private String commantTime;
+    private Date commantTime;
 
     @Override
     public String toString() {
@@ -20,11 +22,11 @@ public class CustomerCommantsDto {
                 '}';
     }
 
-    public String getCustomerId() {
+    public Long getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(String customerId) {
+    public void setCustomerId(Long customerId) {
         this.customerId = customerId;
     }
 
@@ -52,18 +54,18 @@ public class CustomerCommantsDto {
         this.commant = commant;
     }
 
-    public String getCommantTime() {
+    public Date getCommantTime() {
         return commantTime;
     }
 
-    public void setCommantTime(String commantTime) {
+    public void setCommantTime(Date commantTime) {
         this.commantTime = commantTime;
     }
 
     public CustomerCommantsDto() {
     }
 
-    public CustomerCommantsDto(String customerId, String customerName, String productName, String commant, String commantTime) {
+    public CustomerCommantsDto(Long customerId, String customerName, String productName, String commant, Date commantTime) {
         this.customerId = customerId;
         this.customerName = customerName;
         this.productName = productName;

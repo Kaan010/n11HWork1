@@ -17,4 +17,10 @@ public class CustomerEntityService {
     public List<CustomerDto> findAll(){
         return customerDao.findAll();
     }
+
+    public CustomerDto findByName(String name){
+        return customerDao.findByName(name);
+    }
+
+
 }
