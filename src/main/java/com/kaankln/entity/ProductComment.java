@@ -8,7 +8,7 @@ import java.util.Date;
 @Table(name = "PRODUCT_COMMENT")
 public class ProductComment {
 
-    @SequenceGenerator(name = "generator", sequenceName = "KATEGORI_ID_SEQ")
+    @SequenceGenerator(name = "generator", sequenceName = "COMMENT_ID_SEQ")
     @Id
     @GeneratedValue(generator = "generator")
     @Column(name = "ID", nullable = false)
@@ -24,8 +24,8 @@ public class ProductComment {
     @Column(name = "PRODUCT_ID")
     private Long productId;
 
-    @Column(name = "USER_ID")
-    private Long userId;
+    @Column(name = "CUSTOMER_ID")
+    private Long customerId;
 
 
 }

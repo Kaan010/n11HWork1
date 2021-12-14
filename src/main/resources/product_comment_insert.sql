@@ -1,0 +1,9 @@
+INSERT INTO public.product_comment(	id, commant_date, comment, customer_id, product_id)	VALUES (1, now(), 'cokiyiurun', 2, 2);
+INSERT INTO public.product_comment(	id, commant_date, comment, customer_id, product_id)	VALUES (2, now(), 'mükoürün', 2, 3);
+INSERT INTO public.product_comment(	id, commant_date, comment, customer_id, product_id)	VALUES (3, now(), 'kocamaaldımiyi', 2, 4);
+INSERT INTO public.product_comment(	id, commant_date, comment, customer_id, product_id)	VALUES (4, now(), 'esimbeyendi', 3, 4);
+INSERT INTO public.product_comment(	id, commant_date, comment, customer_id, product_id)	VALUES (5, now(), 'hünkarbeyendi', 4, 4);
+INSERT INTO public.product_comment(	id, commant_date, comment, customer_id, product_id)	VALUES (6, now(), 'agambeyendi', 1, 5);
+INSERT INTO public.product_comment(	id, commant_date, comment, customer_id, product_id)	VALUES (7, now(), 'bibedenbüyükpls', 5, 5);
+INSERT INTO public.product_comment(	id, commant_date, comment, customer_id, product_id)	VALUES (8, now(), 'üffbeeaganeiyioldu', 5, 5);
+INSERT INTO public.product_comment(	id, commant_date, comment, customer_id, product_id)	VALUES (9, now(), 'cokiyiurun', 6, 5);

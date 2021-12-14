@@ -1,41 +1,39 @@
 package com.kaankln.dto;
 
-import java.math.BigDecimal;
-
 //DTO for question 4
-public class UserCommantsDto {
+public class CustomerCommantsDto {
 
-    private String userId;
-    private String userName;
+    private String customerId;
+    private String customerName;
     private String productName;
     private String commant;
     private String commantTime;
 
     @Override
     public String toString() {
-        return "UserCommantsDto{" +
-                "userId='" + userId + '\'' +
-                ", userName='" + userName + '\'' +
+        return "CustomerCommantsDto{" +
+                "customerId='" + customerId + '\'' +
+                ", customerName='" + customerName + '\'' +
                 ", productName='" + productName + '\'' +
                 ", commant='" + commant + '\'' +
                 ", commantTime='" + commantTime + '\'' +
                 '}';
     }
 
-    public String getUserId() {
-        return userId;
+    public String getCustomerId() {
+        return customerId;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
     public String getProductName() {
@@ -62,12 +60,12 @@ public class UserCommantsDto {
         this.commantTime = commantTime;
     }
 
-    public UserCommantsDto() {
+    public CustomerCommantsDto() {
     }
 
-    public UserCommantsDto(String userId, String userName, String productName, String commant, String commantTime) {
-        this.userId = userId;
-        this.userName = userName;
+    public CustomerCommantsDto(String customerId, String customerName, String productName, String commant, String commantTime) {
+        this.customerId = customerId;
+        this.customerName = customerName;
         this.productName = productName;
         this.commant = commant;
         this.commantTime = commantTime;

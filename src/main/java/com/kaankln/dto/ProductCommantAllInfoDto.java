@@ -8,29 +8,29 @@ public class ProductCommantAllInfoDto {
     private String productName;
     private String categoriName;
     private BigDecimal productPrice;
-    private String userName;
-    private String userLastName;
-    private String userEmail;
-    private String userTelephone;
+    private String customerName;
+    private String customerLastName;
+    private String customerEmail;
+    private String customerTelephone;
     private String commant;
     private BigDecimal commantTime;
 
     public ProductCommantAllInfoDto(String productName,
                                     String categoriName,
                                     BigDecimal productPrice,
-                                    String userName,
-                                    String userLastName,
-                                    String userEmail,
-                                    String userTelephone,
+                                    String customerName,
+                                    String customerLastName,
+                                    String customerEmail,
+                                    String customerTelephone,
                                     String commant,
                                     BigDecimal commantTime) {
         this.productName = productName;
         this.categoriName = categoriName;
         this.productPrice = productPrice;
-        this.userName = userName;
-        this.userLastName = userLastName;
-        this.userEmail = userEmail;
-        this.userTelephone = userTelephone;
+        this.customerName = customerName;
+        this.customerLastName = customerLastName;
+        this.customerEmail = customerEmail;
+        this.customerTelephone = customerTelephone;
         this.commant = commant;
         this.commantTime = commantTime;
     }
@@ -62,36 +62,36 @@ public class ProductCommantAllInfoDto {
         this.productPrice = productPrice;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
-    public String getUserLastName() {
-        return userLastName;
+    public String getCustomerLastName() {
+        return customerLastName;
     }
 
-    public void setUserLastName(String userLastName) {
-        this.userLastName = userLastName;
+    public void setCustomerLastName(String customerLastName) {
+        this.customerLastName = customerLastName;
     }
 
-    public String getUserEmail() {
-        return userEmail;
+    public String getCustomerEmail() {
+        return customerEmail;
     }
 
-    public void setUserEmail(String userEmail) {
-        this.userEmail = userEmail;
+    public void setCustomerEmail(String customerEmail) {
+        this.customerEmail = customerEmail;
     }
 
-    public String getUserTelephone() {
-        return userTelephone;
+    public String getCustomerTelephone() {
+        return customerTelephone;
     }
 
-    public void setUserTelephone(String userTelephone) {
-        this.userTelephone = userTelephone;
+    public void setCustomerTelephone(String customerTelephone) {
+        this.customerTelephone = customerTelephone;
     }
 
     public String getCommant() {
@@ -116,10 +116,10 @@ public class ProductCommantAllInfoDto {
                 "productName='" + productName + '\'' +
                 ", categoriName='" + categoriName + '\'' +
                 ", productPrice=" + productPrice +
-                ", userName='" + userName + '\'' +
-                ", userLastName='" + userLastName + '\'' +
-                ", userEmail='" + userEmail + '\'' +
-                ", userTelephone='" + userTelephone + '\'' +
+                ", customerName='" + customerName + '\'' +
+                ", customerLastName='" + customerLastName + '\'' +
+                ", customerEmail='" + customerEmail + '\'' +
+                ", customerTelephone='" + customerTelephone + '\'' +
                 ", commant='" + commant + '\'' +
                 ", commantTime=" + commantTime +
                 '}';

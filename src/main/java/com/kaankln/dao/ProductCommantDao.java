@@ -3,9 +3,9 @@ package com.kaankln.dao;
 import com.kaankln.base.BaseDao;
 import com.kaankln.dto.CommantCountsOfProductsDto;
 import com.kaankln.dto.ProductCommantAllInfoDto;
-import com.kaankln.dto.UserCommantsDto;
+import com.kaankln.dto.CustomerCommantsDto;
 import com.kaankln.entity.Urun;
-import com.kaankln.entity.User;
+import com.kaankln.entity.Customer;
 import org.hibernate.query.Query;
 
 import java.util.List;
@@ -31,7 +31,7 @@ public class ProductCommantDao extends BaseDao {
         return query.list();
     }
 
-    public List<UserCommantsDto> findAllCommandsOfProductsByUser(User user) {
+    public List<CustomerCommantsDto> findAllCommandsOfProductsByCustomer(Customer customer) {
         String sql="";
 
         Query query = getCurrentSession().createQuery(sql);

@@ -3,9 +3,9 @@ package com.kaankln.entityservice;
 import com.kaankln.dao.ProductCommantDao;
 import com.kaankln.dto.CommantCountsOfProductsDto;
 import com.kaankln.dto.ProductCommantAllInfoDto;
-import com.kaankln.dto.UserCommantsDto;
+import com.kaankln.dto.CustomerCommantsDto;
 import com.kaankln.entity.Urun;
-import com.kaankln.entity.User;
+import com.kaankln.entity.Customer;
 
 import java.util.List;
 
@@ -25,8 +25,8 @@ public class ProductCommantEntityService {
         return productCommantDao.findAllCommandsCountsOfProducts();
     }
 
-    public List<UserCommantsDto> findAllCommandsOfProductsByUser(User user){
-        return productCommantDao.findAllCommandsOfProductsByUser(user);
+    public List<CustomerCommantsDto> findAllCommandsOfProductsByCustomer(Customer customer){
+        return productCommantDao.findAllCommandsOfProductsByCustomer(customer);
     }
 
 

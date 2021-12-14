@@ -24,6 +24,8 @@
         <!-- Annotated com.kaankln.entity classes -->
         <mapping class="com.kaankln.entity.Kategori"/>
         <mapping class="com.kaankln.entity.Urun"/>
+        <mapping class="com.kaankln.entity.Customer"/>
+        <mapping class="com.kaankln.entity.ProductComment"/>
 
     </session-factory>
 </hibernate-configuration>
