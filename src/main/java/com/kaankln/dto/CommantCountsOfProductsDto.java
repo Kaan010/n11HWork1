@@ -59,7 +59,7 @@ public class CommantCountsOfProductsDto {
         this.commantCount = commantCount;
     }
 
-    public CommantCountsOfProductsDto(String productId) {
-        this.productId = productId;
+    public CommantCountsOfProductsDto() {
+
     }
 }

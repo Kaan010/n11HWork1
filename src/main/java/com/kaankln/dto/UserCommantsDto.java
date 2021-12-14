@@ -62,8 +62,7 @@ public class UserCommantsDto {
         this.commantTime = commantTime;
     }
 
-    public UserCommantsDto(String userId) {
-        this.userId = userId;
+    public UserCommantsDto() {
     }
 
     public UserCommantsDto(String userId, String userName, String productName, String commant, String commantTime) {
