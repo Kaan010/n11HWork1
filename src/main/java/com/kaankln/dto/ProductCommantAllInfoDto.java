@@ -2,6 +2,7 @@ package com.kaankln.dto;
 
 import java.math.BigDecimal;
 
+//DTO for question 2
 public class ProductCommantAllInfoDto {
 
     private String productName;
