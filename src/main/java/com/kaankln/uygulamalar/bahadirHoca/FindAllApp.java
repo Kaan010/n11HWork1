@@ -1,4 +1,4 @@
-package com.kaankln.uygulamalar;
+package com.kaankln.uygulamalar.bahadirHoca;
 
 import com.kaankln.entity.Urun;
 import com.kaankln.entityservice.UrunEntityService;
