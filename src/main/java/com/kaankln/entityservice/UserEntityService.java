@@ -1,5 +1,7 @@
 package com.kaankln.entityservice;
 
-public class UserEntityService {
+import com.kaankln.base.BaseDao;
+
+public class UserEntityService extends BaseDao {
 
 }
