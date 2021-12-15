@@ -92,9 +92,10 @@ public class UrunDao extends BaseDao {
 
     public List<CommantCountsOfProductsDto> findAllCommandsCountsOfProducts() {
         String sql=" select " +
-                "new com.kaankln.dto.CommantCountsOfProductsDto(urun.id, urun.adi, urun.fiyat, COUNT(comment.id)) " +
+                "new com.kaankln.dto.CommantCountsOfProductsDto(urun.id, urun.adi, urun.fiyat, COUNT(comment.productId)) " +
                 "from Urun urun " +
-                "left join ProductComment comment on urun.id = comment.productId ";
+                "left join ProductComment comment on urun.id = comment.productId " +
+                "group by urun.id";
 
         Query query = getCurrentSession().createQuery(sql);
         return query.list();

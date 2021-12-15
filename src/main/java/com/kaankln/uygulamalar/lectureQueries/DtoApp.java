@@ -1,4 +1,4 @@
-package com.kaankln.uygulamalar.bahadirHoca;
+package com.kaankln.uygulamalar.lectureQueries;
 
 import com.kaankln.dto.UrunDetayDto;
 import com.kaankln.entityservice.UrunEntityService;
