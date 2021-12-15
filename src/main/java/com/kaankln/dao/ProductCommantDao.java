@@ -14,22 +14,21 @@ import java.util.List;
 public class ProductCommantDao extends BaseDao {
     public List<ProductCommantAllInfoDto> findAllCommandsAndTheirAdditionalInfosByUrun(Urun urun) {
 
-        String sql="";
+        String sql=" select " +
+                "new com.kaankln.dto.ProductCommantAllInfoDto(urun.adi, urun.kategori.adi, urun.fiyat, customer.name, customer.lastname, customer.email, customer.telephone, commend.comment, commend.commantDate) " +
+                "from ProductComment commend " +
+                "left join Customer customer on commend.customerId = customer.id " +
+                "left join Urun urun on commend.productId = urun.id " +
+                "where urun.id =:urunParamId";
+
+
 
         Query query = getCurrentSession().createQuery(sql);
+        query.setParameter("urunParamId", urun.getId());
 
 
         return query.list();
 
-    }
-
-    public List<CommantCountsOfProductsDto> findAllCommandsCountsOfProducts() {
-        String sql="";
-
-        Query query = getCurrentSession().createQuery(sql);
-
-
-        return query.list();
     }
 
     public List<CustomerCommantsDto> findAllCommandsOfProductsByCustomer(CustomerDto customer) {

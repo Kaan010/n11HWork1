@@ -1,6 +1,7 @@
 package com.kaankln.dto;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 //DTO for question 2
 public class ProductCommantAllInfoDto {
@@ -13,7 +14,7 @@ public class ProductCommantAllInfoDto {
     private String customerEmail;
     private String customerTelephone;
     private String commant;
-    private BigDecimal commantTime;
+    private Date commantTime;
 
     public ProductCommantAllInfoDto(String productName,
                                     String categoriName,
@@ -23,7 +24,7 @@ public class ProductCommantAllInfoDto {
                                     String customerEmail,
                                     String customerTelephone,
                                     String commant,
-                                    BigDecimal commantTime) {
+                                    Date commantTime) {
         this.productName = productName;
         this.categoriName = categoriName;
         this.productPrice = productPrice;
@@ -102,11 +103,11 @@ public class ProductCommantAllInfoDto {
         this.commant = commant;
     }
 
-    public BigDecimal getCommantTime() {
+    public Date getCommantTime() {
         return commantTime;
     }
 
-    public void setCommantTime(BigDecimal commantTime) {
+    public void setCommantTime(Date commantTime) {
         this.commantTime = commantTime;
     }
 

@@ -5,10 +5,10 @@ import java.math.BigDecimal;
 //DTO for question 3
 public class CommantCountsOfProductsDto {
 
-    private String productId;
+    private Long productId;
     private String productName;
     private BigDecimal price;
-    private BigDecimal commantCount;
+    private Long commantCount;
 
     @Override
     public String toString() {
@@ -20,11 +20,11 @@ public class CommantCountsOfProductsDto {
                 '}';
     }
 
-    public String getProductId() {
+    public Long getProductId() {
         return productId;
     }
 
-    public void setProductId(String productId) {
+    public void setProductId(Long productId) {
         this.productId = productId;
     }
 
@@ -44,15 +44,15 @@ public class CommantCountsOfProductsDto {
         this.price = price;
     }
 
-    public BigDecimal getCommantCount() {
+    public Long getCommantCount() {
         return commantCount;
     }
 
-    public void setCommantCount(BigDecimal commantCount) {
+    public void setCommantCount(Long commantCount) {
         this.commantCount = commantCount;
     }
 
-    public CommantCountsOfProductsDto(String productId, String productName, BigDecimal price, BigDecimal commantCount) {
+    public CommantCountsOfProductsDto(Long productId, String productName, BigDecimal price, Long commantCount) {
         this.productId = productId;
         this.productName = productName;
         this.price = price;

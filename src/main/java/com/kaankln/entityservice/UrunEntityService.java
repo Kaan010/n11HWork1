@@ -1,6 +1,7 @@
 package com.kaankln.entityservice;
 
 import com.kaankln.dao.UrunDao;
+import com.kaankln.dto.CommantCountsOfProductsDto;
 import com.kaankln.dto.UrunDetayDto;
 import com.kaankln.entity.Urun;
 import java.math.BigDecimal;
@@ -37,5 +38,10 @@ public class UrunEntityService {
     public List<UrunDetayDto> findAllUrunDetayDtoByKategoriKirilim(Long kirilim) {
         return urunDao.findAllUrunDetayDtoByKategoriKirilim(kirilim);
     }
+
+    public List<CommantCountsOfProductsDto> findAllCommandsCountsOfProducts(){
+        return urunDao.findAllCommandsCountsOfProducts();
+    }
+
 
 }

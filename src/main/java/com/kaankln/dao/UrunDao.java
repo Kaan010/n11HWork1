@@ -1,6 +1,7 @@
 package com.kaankln.dao;
 
 import com.kaankln.base.BaseDao;
+import com.kaankln.dto.CommantCountsOfProductsDto;
 import com.kaankln.dto.UrunDetayDto;
 import com.kaankln.entity.Urun;
 import org.hibernate.query.Query;
@@ -89,4 +90,13 @@ public class UrunDao extends BaseDao {
         return query.list();
     }
 
+    public List<CommantCountsOfProductsDto> findAllCommandsCountsOfProducts() {
+        String sql=" select " +
+                "new com.kaankln.dto.CommantCountsOfProductsDto(urun.id, urun.adi, urun.fiyat, COUNT(comment.id)) " +
+                "from Urun urun " +
+                "left join ProductComment comment on urun.id = comment.productId ";
+
+        Query query = getCurrentSession().createQuery(sql);
+        return query.list();
+    }
 }

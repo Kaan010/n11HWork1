@@ -22,10 +22,6 @@ public class ProductCommantEntityService {
         return productCommantDao.findAllCommandsAndTheirAdditionalInfosByUrun(urun);
     }
 
-    public List<CommantCountsOfProductsDto> findAllCommandsCountsOfProducts(){
-        return productCommantDao.findAllCommandsCountsOfProducts();
-    }
-
     public List<CustomerCommantsDto> findAllCommandsOfProductsByCustomer(CustomerDto customer){
         return productCommantDao.findAllCommandsOfProductsByCustomer(customer);
     }
